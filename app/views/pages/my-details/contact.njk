@@ -1,0 +1,76 @@
+<h1 class="govuk-heading-xl">Contact details</h1>
+
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+
+{{ govukSummaryList({
+  rows: [
+    {
+      key: {
+        text: "Address we send letters to"
+      },
+      value: {
+        html: "72 Guild Street<br>London<br>SE23 6FH"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Address we send letters to"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Email address"
+      },
+      value: {
+        text: "sarah.philips@gmail.com"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Email address"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Mobile number"
+      },
+      value: {
+        text: "07700 900 457"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Mobile number"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Landline number"
+      },
+      value: {
+        text: "0191 567 8901"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Landline number"
+          }
+        ]
+      }
+    }
+  ]
+}) }}

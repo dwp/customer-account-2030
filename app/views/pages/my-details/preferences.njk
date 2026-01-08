@@ -1,0 +1,60 @@
+<h1 class="govuk-heading-xl">Preferences</h1>
+
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+
+{{ govukSummaryList({
+  rows: [
+    {
+      key: {
+        text: "Language for letters"
+      },
+      value: {
+        text: "English"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Language for letters"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "How we speak to you"
+      },
+      value: {
+        text: "I do not have a speaking preference"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "How we speak to you"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "How we write to you"
+      },
+      value: {
+        text: "I do not have a writing preference"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "How we write to you"
+          }
+        ]
+      }
+    }
+  ]
+}) }}
+

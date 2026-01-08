@@ -1,5 +1,5 @@
 {
-  "serviceName": "Service name goes here",
+  "serviceName": "Manage your Benefits and State Pension",
   "plugins": {
     "govuk-frontend": {
       "rebrand": true

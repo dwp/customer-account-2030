@@ -4,3 +4,59 @@
 // 
 
 // Add extra styles here
+
+
+.govuk-service-navigation__list {
+    justify-content: end;
+}
+
+// giving the summary list a bit more breathing space - REVISIT FOR MOBILE DEVICES
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+// Side navigation hacks - REVISIT FOR MOBILE DEVICES
+.dwp-side-navigation__link {
+    font-size: 19px;
+}
+
+// Hide side navigation sub-item bullets
+.dwp-side-navigation__sub-item::before {
+    content: " " !important;
+    padding-left: 20px;
+}
+
+// One Login | Show password button styles
+.govuk-show-password__input-wrapper {
+    flex-direction: row;
+}
+
+.govuk-show-password__input-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.govuk-show-password__toggle {
+    margin-left: -2px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.govuk-show-password__toggle {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 0;
+    display: table-cell;
+    padding: 5px 15px;
+    min-width: 5.5em;
+    color: #1d70b8;
+    text-decoration: underline;
+    background: #fff;
+    border: solid 2px #0b0c0c;
+    white-space: nowrap;
+    cursor: pointer;
+}

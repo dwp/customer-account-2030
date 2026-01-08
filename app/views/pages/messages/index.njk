@@ -1,0 +1,61 @@
+<h1 class="govuk-heading-xl">Messages</h1>
+
+
+{{ govukTaskList({
+  items: [
+    {
+      title: {
+        text: "Message 1"
+      },
+      href: "/account/messages/message/1",
+      status: {
+        tag: {
+          text: "Unread",
+          classes: "govuk-tag--blue"
+        }
+      }
+    },
+    {
+      title: {
+        text: "Message 2"
+      },
+      href: "/account/messages/message/2",
+      status: {
+        text: "Read"
+      }
+    },
+    {
+      title: {
+        text: "Message 3"
+      },
+      hint: {
+        text: "Include 5 years of the company’s relevant financial information"
+      },
+      href: "/account/messages/message/3",
+      status: {
+        text: "Read"
+      }
+    },
+    {
+      title: {
+        text: "Message 4"
+      },
+      href: "/account/messages/message/4",
+      status: {
+        tag: {
+          text: "Unread",
+          classes: "govuk-tag--none"
+        }
+      }
+    },
+    {
+      title: {
+        text: "Message 5"
+      },
+      href: "/account/messages/message/5",
+      status: {
+        text: "Read"
+      }
+    }
+  ]
+}) }}

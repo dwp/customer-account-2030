@@ -1,0 +1,42 @@
+<h1 class="govuk-heading-xl">Accessibility</h1>
+
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+
+{{ govukSummaryList({
+  rows: [
+    {
+      key: {
+        text: "Alternative formats"
+      },
+      value: {
+        text: "I do not have an alternative format"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Additional need"
+      },
+      value: {
+        text: "I do not have an additional need"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "Additional need"
+          }
+        ]
+      }
+    }
+  ]
+}) }}

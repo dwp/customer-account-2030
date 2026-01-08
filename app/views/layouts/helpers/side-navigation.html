@@ -1,0 +1,79 @@
+{{ 
+        dwpSideNavigation({
+            pageId: "side-navigation-2",
+            selectedItem: "/account/" + url.section,
+            selectedSubItem: "/account/" + url.section + "/" + url.page if url.page  else "",
+            items: [
+            {
+                text: "To-do list",
+                href: "/account/todo"
+            },
+            {
+                text: "My details",
+                href: "/account/my-details",
+                subItems: [
+                    {
+                        text: "Person details",
+                        href: "/account/my-details/personal"
+                    },
+                    {
+                        text: "Health conditions",
+                        href: "/account/my-details/health"
+                    },
+                    {
+                        text: "Contact details",
+                        href: "/account/my-details/contact"
+                    },
+                    {
+                        text: "Accessibility",
+                        href: "/account/my-details/accessibility"
+                    },
+                    {
+                        text: "Preferences",
+                        href: "/account/my-details/preferences"
+                    }
+                ]
+            },
+            {
+                text: "Benefits",
+                href: "/account/benefits",
+                subItems: [
+                    {
+                        text: "Universal Credit",
+                        href: "/account/benefits/uc"
+                    },
+                    {
+                        text: "Careers allowance",
+                        href: "/account/benefits/careers"
+                    }
+                ]
+            },
+            {
+                text: "State Pension",
+                href: "/account/state-pension"
+            },
+            {
+                text: "Payments",
+                href: "/account/payments"
+            },
+            {
+                text: "Messages",
+                href: "/account/messages"
+            },
+            {
+                text: "Documents",
+                href: "/account/documents",
+                 subItems: [
+                    {
+                        text: "House",
+                        href: "/account/documents/house"
+                    }
+                ]
+            },
+            {
+                text: "Challenge a decision",
+                href: "/account/decision"
+            }
+            ]
+        })
+}}

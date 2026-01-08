@@ -1,0 +1,13 @@
+{% extends "layouts/account.html" %}
+
+{% set pageName="Home" %}
+
+
+  {% block main_content %}
+  {% if url.section %}
+      {% include "./pages/" + url.section + "/"  + (url.page + ".njk" if url.page else "index.njk") ignore missing %}
+  {% else %}
+      {% include "./pages/index.njk" ignore missing %}
+  {% endif %}
+  {% endblock %}
+

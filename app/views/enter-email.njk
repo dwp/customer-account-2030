@@ -1,0 +1,11 @@
+{% extends "layouts/one-login.html" %}
+
+{% set pageName="Create your GOV.UK One Login or sign in" %}
+
+
+  {% block main_content %}
+
+  {% include "./pages/one-login/enter-email.njk" ignore missing %}
+  
+  {% endblock %}
+

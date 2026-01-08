@@ -1,0 +1,37 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
+{% block header %}
+
+{{ 
+    govukOneLoginServiceHeader({
+        signOutLink: "/", 
+        serviceNavigationParams: { 
+            serviceName: serviceName,
+            serviceUrl: "/account",
+            navigationLabel: "Main navigation",
+            slots: {
+                navigationEnd: '<li class="govuk-service-navigation__item govuk-service-navigation__item--last">Sarah Phillips</li>'
+                }
+            }
+        })
+}} 
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    {% include "./helpers/side-navigation.html" %}
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+  {% block main_content %}{% endblock %}
+  </div>
+</div>
+
+{% endblock %}
