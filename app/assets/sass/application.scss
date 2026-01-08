@@ -10,10 +10,16 @@
     justify-content: end;
 }
 
-// giving the summary list a bit more breathing space - REVISIT FOR MOBILE DEVICES
-.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+@media (min-width: 768px) {
+    .govuk-service-navigation__list {
+        justify-content: flex-end;
+    }
+
+    // giving the summary list a bit more breathing space - REVISIT FOR MOBILE DEVICES
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
 }
 
 // Side navigation hacks - REVISIT FOR MOBILE DEVICES
